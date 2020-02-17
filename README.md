@@ -24,9 +24,7 @@ const amazonWishScraper = require('./amazonWishScraper');
 ```json
 [
     { "title" : "ProductA", "price": 3278, "productID": "429711111X" },
-    // if price is not existed(ex:sold out) value is -1
-    { "title" : "ProductB", "price": -1, "productID": "429711111X" }, 
-    ...
+    { "title" : "ProductB", "price": -1, "productID": "429711111X" },     // if price is not existed(ex:sold out) value is -1
 ]
 ```
 
