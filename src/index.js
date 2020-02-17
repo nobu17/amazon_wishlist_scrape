@@ -1,7 +1,7 @@
 const amazonWishScraper = require('./amazonWishListScraper');
 
 async function main() {
-  const itemList = await amazonWishScraper.getProductInfo('92QVMALK2QVW');
+  const itemList = await amazonWishScraper.getProductInfo('145VXU80F2LO1');
   console.log('itemList', JSON.stringify(itemList));
 }
 

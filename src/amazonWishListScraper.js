@@ -34,13 +34,12 @@ async function initPage(browser) {
 async function scrapePage(page) {
   return await page.evaluate(async () => {
     // scroll down until end of the list
-    const distance = 400;
+    const distance = 500;
     const delay = 100;
     while (
-      document.scrollingElement.scrollTop + window.innerHeight <
-        document.scrollingElement.scrollHeight &&
-      !document.querySelector('#endOfListMarker')
+      !document.querySelector('#no-items-section-anywhere')
     ) {
+      // console.log('scroll down');
       document.scrollingElement.scrollBy(0, distance);
       await new Promise(resolve => {
         setTimeout(resolve, delay);
