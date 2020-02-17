@@ -3,7 +3,7 @@ This is a sample of scraping Amazon.co.jp's wishlist.
 Only available to scrape open wishlist.  
 Private wishlist can not scrape.
 
-Detail is written at below link
+Detail is written at below link.  
 https://qiita.com/nobu17/items/35419cb346a88c655770
 
 # Usage
