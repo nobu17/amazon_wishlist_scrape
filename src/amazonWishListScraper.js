@@ -36,9 +36,7 @@ async function scrapePage(page) {
     // scroll down until end of the list
     const distance = 500;
     const delay = 100;
-    while (
-      !document.querySelector('#no-items-section-anywhere')
-    ) {
+    while (!document.querySelector('#no-items-section-anywhere')) {
       // console.log('scroll down');
       document.scrollingElement.scrollBy(0, distance);
       await new Promise(resolve => {
@@ -58,7 +56,9 @@ async function scrapePage(page) {
         let price = -1;
         const priceEle = el.querySelector('[id^="itemPrice_"] > span');
         if (priceEle && priceEle.textContent) {
-          price = Number(priceEle.textContent.replace('￥', '').replace(',', ''));
+          price = Number(
+            priceEle.textContent.replace('￥', '').replace(',', '')
+          );
         }
         itemList.push({
           price: price,
