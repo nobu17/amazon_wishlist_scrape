@@ -7,7 +7,7 @@ Private wishlist can not scrape.
 
 ## call method
 
-call `getProductInfo` function with whish list id
+call `getProductInfo` function with wish list id
 
 ```javascript
 
